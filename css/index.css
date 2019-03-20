@@ -133,28 +133,61 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
   margin: auto;
   width: 900px;
+  height: 100vh;
 }
-.content {
+.container .content {
   display: flex;
 }
-.column-1 {
+.container .column {
+  height: 100%;
+}
+.container .column-1 {
   flex: 1;
   background: #555;
   color: white;
   padding: 20px 4%;
-  height: 100%;
   text-align: center;
 }
-.column-3 {
+.container .column-3 {
   flex: 4;
 }
-h2 {
+.container h2 {
   text-transform: uppercase;
 }
-img {
+.container img {
   border-radius: 100%;
+}
+.container .basic-info {
+  text-align: center;
+  margin: 50px 0;
+}
+.container .basic-info h1 {
+  font-size: 3rem;
+}
+.container .basic-info h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+}
+.container .qualifications {
+  margin: 20px 0 20px 5%;
+}
+.container .qualifications-title {
+  display: flex;
+  align-items: center;
+}
+.container .qualifications-title h2 {
+  margin: 0 3%;
+}
+.container .qualifications-title .divider {
+  flex: 1;
+  height: 1px;
+  background-color: black;
+}
+.container .qualifications-content {
+  margin: 15px 5%;
 }

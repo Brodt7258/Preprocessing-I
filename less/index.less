@@ -61,10 +61,11 @@ html, body {
 .container {
 	margin: auto;
 	width: 900px;
-	height: 100vh;
+	height: 100%;
 
 	.content {
 		display: flex;
+		height: 100%;
 	}
 
 	.column {
@@ -76,10 +77,10 @@ html, body {
 			color: white;
 			padding: 20px 4%;
 			text-align: center;
+			height: 100%;
 		}
 		&-main {
 			flex: 1;
-			
 		}
 	}
 
@@ -104,6 +105,8 @@ html, body {
 		
 		p {
 			font-family: 'Charm', cursive;
+			line-height: .9rem;
+			font-size: .75rem;
 		}
 	}
 
@@ -116,11 +119,20 @@ html, body {
 
 		p {
 			font-family: 'Charm', cursive;
+			line-height: 1.25rem;
 		}
 	}
 
 	.contact {
 		margin: 40px 0;
+		p {
+			text-transform: uppercase;
+			font-size: 0.7rem;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
 	}
 
 	.basic-info {
@@ -164,19 +176,22 @@ html, body {
 
 		.name-and-date {
 			display: flex;
-			width: 50%;
-			justify-content: space-between;
+			margin-bottom: 10px;
+			p {
+				margin-right: 20px;
+				font-family: 'Raleway', sans-serif;
+			}
+			div {
+				font-family: 'Charm', cursive;
+				color: #666;
+			}
 		}
 
 		h4 {
 			font-weight: 600;
 			font-family: 'Raleway', sans-serif;
 			margin: 10px 0;
+			text-decoration: underline;
 		}
 	}
 }
-
-
-
-
-

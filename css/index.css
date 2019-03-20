@@ -140,9 +140,23 @@ body {
   width: 900px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container h2 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
 .container .content {
   display: flex;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .container .content {
+    flex-direction: column;
+  }
 }
 .container nav {
   text-align: right;
@@ -164,12 +178,13 @@ body {
   padding: 20px 4%;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .container .column-side {
+    width: 100%;
+  }
+}
 .container .column-main {
   flex: 1;
-}
-.container h2 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
 }
 .container img {
   width: 100%;

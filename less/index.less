@@ -12,9 +12,21 @@ html, body {
 	width: 900px;
 	height: 100%;
 
+	@media @phone {
+		width: 100%;
+	}
+	
+	h2 {
+		.title-text();
+	}
+
 	.content {
 		display: flex;
 		height: 100%;
+
+		@media @phone {
+			flex-direction: column;
+		}
 	}
 
 	nav {
@@ -39,15 +51,17 @@ html, body {
 			color: @light-contrast;
 			padding: 20px 4%;
 			text-align: center;
+
+			@media @phone {
+				width: 100%;
+			}
 		}
 		&-main {
 			flex: 1;
 		}
 	}
 
-	h2 {
-		.title-text();
-	}
+	
 
 	img {
 		width: 100%;

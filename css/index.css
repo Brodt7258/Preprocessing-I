@@ -134,3 +134,27 @@ html,
 body {
   height: 100%;
 }
+.container {
+  margin: auto;
+  width: 900px;
+}
+.content {
+  display: flex;
+}
+.column-1 {
+  flex: 1;
+  background: #555;
+  color: white;
+  padding: 20px 4%;
+  height: 100%;
+  text-align: center;
+}
+.column-3 {
+  flex: 4;
+}
+h2 {
+  text-transform: uppercase;
+}
+img {
+  border-radius: 100%;
+}

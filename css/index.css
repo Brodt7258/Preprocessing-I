@@ -144,6 +144,19 @@ body {
   display: flex;
   height: 100%;
 }
+.container nav {
+  text-align: right;
+  margin-top: 15px;
+}
+.container nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.35s;
+}
+.container nav a:hover {
+  color: tomato;
+}
 .container .column-side {
   width: 25%;
   background: #555;
@@ -172,7 +185,7 @@ body {
 }
 .container .profile p {
   font-family: 'Charm', cursive;
-  line-height: 0.9rem;
+  line-height: 0.925rem;
   font-size: 0.75rem;
 }
 .container .skills {

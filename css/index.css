@@ -144,16 +144,12 @@ body {
   display: flex;
   height: 100%;
 }
-.container .column {
-  height: 100%;
-}
 .container .column-side {
   width: 25%;
   background: #555;
   color: white;
   padding: 20px 4%;
   text-align: center;
-  height: 100%;
 }
 .container .column-main {
   flex: 1;
@@ -219,6 +215,7 @@ body {
 .container .qualifications-title {
   display: flex;
   align-items: center;
+  margin: 40px 0;
 }
 .container .qualifications-title h2 {
   margin: 0 3%;
@@ -242,7 +239,7 @@ body {
 }
 .container .qualifications .name-and-date div {
   font-family: 'Charm', cursive;
-  color: #666;
+  color: #555;
 }
 .container .qualifications h4 {
   font-weight: 600;

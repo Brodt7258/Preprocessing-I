@@ -53,9 +53,13 @@ table {
     box-sizing: border-box;
 }
 
+@body: 'Roboto', sans-serif;
+@title: 'Raleway', sans-serif;
+@cursive: 'Charm', cursive; //Apparently "cursive" defaults to ComicSans on Windows?  That's horrifying
+
 html, body {
 		height: 100%;
-		font-family: 'Roboto', sans-serif;
+		font-family: @body;
 }
 
 .container {
@@ -69,15 +73,12 @@ html, body {
 	}
 
 	.column {
-		height: 100%;
-
 		&-side {
 			width: 25%;
 			background: #555;
 			color: white;
 			padding: 20px 4%;
 			text-align: center;
-			height: 100%;
 		}
 		&-main {
 			flex: 1;
@@ -86,7 +87,7 @@ html, body {
 
 	h2 {
 		text-transform: uppercase;
-		font-family: 'Raleway', sans-serif;
+		font-family: @title;
 	}
 
 	img {
@@ -104,7 +105,7 @@ html, body {
 		}
 		
 		p {
-			font-family: 'Charm', cursive;
+			font-family: @cursive;
 			line-height: .9rem;
 			font-size: .75rem;
 		}
@@ -118,7 +119,7 @@ html, body {
 		}
 
 		p {
-			font-family: 'Charm', cursive;
+			font-family: @cursive;
 			line-height: 1.25rem;
 		}
 	}
@@ -141,11 +142,11 @@ html, body {
 
 		h1 {
 			font-size: 3rem;
-			font-family: 'Raleway', sans-serif;
+			font-family: @title;
 		}
 
 		h3 {
-			font-family: 'Charm', cursive; //Apparently "cursive" defaults to ComicSans on Windows?  That's horrifying
+			font-family: @cursive;
 			font-size: 1.5rem;
 		}
 	}
@@ -157,10 +158,11 @@ html, body {
 		&-title {
 			display: flex;
 			align-items: center;
+			margin: 40px 0;
 
 			h2 {
 				margin: 0 3%;
-				font-family: 'Raleway', sans-serif;
+				font-family: @title;
 			}
 			
 			.divider{
@@ -179,17 +181,17 @@ html, body {
 			margin-bottom: 10px;
 			p {
 				margin-right: 20px;
-				font-family: 'Raleway', sans-serif;
+				font-family: @title;
 			}
 			div {
-				font-family: 'Charm', cursive;
-				color: #666;
+				font-family: @cursive;
+				color: #555;
 			}
 		}
 
 		h4 {
 			font-weight: 600;
-			font-family: 'Raleway', sans-serif;
+			font-family: @title;
 			margin: 10px 0;
 			text-decoration: underline;
 		}

@@ -1,5 +1,6 @@
 @import "_reset.less";
 @import "_vars.less";
+@import "_mixins.less";
 
 html, body {
 		height: 100%;
@@ -45,8 +46,7 @@ html, body {
 	}
 
 	h2 {
-		text-transform: uppercase;
-		font-family: @title;
+		.title-text();
 	}
 
 	img {
@@ -57,7 +57,7 @@ html, body {
 	}
 
 	.profile {
-		margin: 40px 0;
+		.sidebar-spacing();
 
 		h2 {
 			margin-bottom: 20px;
@@ -71,7 +71,7 @@ html, body {
 	}
 
 	.skills {
-		margin: 40px 0;
+		.sidebar-spacing();
 
 		h2 {
 			margin-bottom: 20px;
@@ -84,9 +84,10 @@ html, body {
 	}
 
 	.contact {
-		margin: 40px 0;
+		.sidebar-spacing();
+
 		p {
-			text-transform: uppercase;
+			.title-text();
 			font-size: 0.7rem;
 		}
 		a {
@@ -101,7 +102,7 @@ html, body {
 
 		h1 {
 			font-size: 3rem;
-			font-family: @title;
+			.title-text();
 		}
 
 		h3 {
@@ -122,7 +123,6 @@ html, body {
 
 			h2 {
 				margin: 0 3%;
-				font-family: @title;
 			}
 			
 			.divider{
@@ -141,7 +141,7 @@ html, body {
 			margin-bottom: 10px;
 			p {
 				margin-right: 20px;
-				font-family: @title;
+				.title-text();
 			}
 			div {
 				font-family: @cursive;

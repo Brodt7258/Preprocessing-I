@@ -203,6 +203,7 @@ body {
 }
 .container .contact p {
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.7rem;
 }
 .container .contact a {
@@ -215,6 +216,7 @@ body {
 }
 .container .basic-info h1 {
   font-size: 3rem;
+  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
 }
 .container .basic-info h3 {
@@ -232,7 +234,6 @@ body {
 }
 .container .qualifications-title h2 {
   margin: 0 3%;
-  font-family: 'Raleway', sans-serif;
 }
 .container .qualifications-title .divider {
   flex: 1;
@@ -248,6 +249,7 @@ body {
 }
 .container .qualifications .name-and-date p {
   margin-right: 20px;
+  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
 }
 .container .qualifications .name-and-date div {

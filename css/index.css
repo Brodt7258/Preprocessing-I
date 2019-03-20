@@ -133,7 +133,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .container {
   margin: auto;
@@ -146,22 +146,46 @@ body {
 .container .column {
   height: 100%;
 }
-.container .column-1 {
-  flex: 1;
+.container .column-side {
+  width: 25%;
   background: #555;
   color: white;
   padding: 20px 4%;
   text-align: center;
 }
-.container .column-3 {
-  flex: 4;
+.container .column-main {
+  flex: 1;
 }
 .container h2 {
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 }
 .container img {
+  width: 100%;
+  height: auto;
   border-radius: 100%;
-  border: 3px solid white;
+  border: 5px solid white;
+}
+.container .profile {
+  margin: 40px 0;
+}
+.container .profile h2 {
+  margin-bottom: 20px;
+}
+.container .profile p {
+  font-family: 'Charm', cursive;
+}
+.container .skills {
+  margin: 40px 0;
+}
+.container .skills h2 {
+  margin-bottom: 20px;
+}
+.container .skills p {
+  font-family: 'Charm', cursive;
+}
+.container .contact {
+  margin: 40px 0;
 }
 .container .basic-info {
   text-align: center;
@@ -169,9 +193,10 @@ body {
 }
 .container .basic-info h1 {
   font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
 }
 .container .basic-info h3 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Charm', cursive;
   font-size: 1.5rem;
 }
 .container .qualifications {
@@ -184,6 +209,7 @@ body {
 }
 .container .qualifications-title h2 {
   margin: 0 3%;
+  font-family: 'Raleway', sans-serif;
 }
 .container .qualifications-title .divider {
   flex: 1;
@@ -199,6 +225,7 @@ body {
   justify-content: space-between;
 }
 .container .qualifications h4 {
-  font-weight: bold;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
   margin: 10px 0;
 }

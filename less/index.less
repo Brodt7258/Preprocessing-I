@@ -55,7 +55,7 @@ table {
 
 html, body {
 		height: 100%;
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -70,26 +70,57 @@ html, body {
 	.column {
 		height: 100%;
 
-		&-1 {
-			flex: 1;
+		&-side {
+			width: 25%;
 			background: #555;
 			color: white;
 			padding: 20px 4%;
 			text-align: center;
 		}
-		&-3 {
-			flex: 4;
+		&-main {
+			flex: 1;
 			
 		}
 	}
 
 	h2 {
 		text-transform: uppercase;
+		font-family: 'Raleway', sans-serif;
 	}
 
 	img {
+		width: 100%;
+		height: auto;
 		border-radius: 100%;
-		border: 3px solid white;
+		border: 5px solid white;
+	}
+
+	.profile {
+		margin: 40px 0;
+
+		h2 {
+			margin-bottom: 20px;
+		}
+		
+		p {
+			font-family: 'Charm', cursive;
+		}
+	}
+
+	.skills {
+		margin: 40px 0;
+
+		h2 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-family: 'Charm', cursive;
+		}
+	}
+
+	.contact {
+		margin: 40px 0;
 	}
 
 	.basic-info {
@@ -98,10 +129,11 @@ html, body {
 
 		h1 {
 			font-size: 3rem;
+			font-family: 'Raleway', sans-serif;
 		}
 
 		h3 {
-			font-family: 'Lobster', cursive; //Apparently "cursive" defaults to ComicSans on Windows?  That's horrifying
+			font-family: 'Charm', cursive; //Apparently "cursive" defaults to ComicSans on Windows?  That's horrifying
 			font-size: 1.5rem;
 		}
 	}
@@ -116,6 +148,7 @@ html, body {
 
 			h2 {
 				margin: 0 3%;
+				font-family: 'Raleway', sans-serif;
 			}
 			
 			.divider{
@@ -136,7 +169,8 @@ html, body {
 		}
 
 		h4 {
-			font-weight: bold;
+			font-weight: 600;
+			font-family: 'Raleway', sans-serif;
 			margin: 10px 0;
 		}
 	}

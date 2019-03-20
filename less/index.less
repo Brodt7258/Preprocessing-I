@@ -89,6 +89,7 @@ html, body {
 
 	img {
 		border-radius: 100%;
+		border: 3px solid white;
 	}
 
 	.basic-info {
@@ -107,6 +108,7 @@ html, body {
 
 	.qualifications {
 		margin: 20px 0 20px 5%;
+		padding: 1px; //prevent margin collapse
 
 		&-title {
 			display: flex;
@@ -125,6 +127,17 @@ html, body {
 
 		&-content {
 			margin: 15px 5%;
+		}
+
+		.name-and-date {
+			display: flex;
+			width: 50%;
+			justify-content: space-between;
+		}
+
+		h4 {
+			font-weight: bold;
+			margin: 10px 0;
 		}
 	}
 }

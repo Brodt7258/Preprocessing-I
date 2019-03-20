@@ -53,9 +53,15 @@ table {
     box-sizing: border-box;
 }
 
+
+//Fonts
 @body: 'Roboto', sans-serif;
 @title: 'Raleway', sans-serif;
 @cursive: 'Charm', cursive; //Apparently "cursive" defaults to ComicSans on Windows?  That's horrifying
+
+//Colors
+@dark-contrast: #555;
+@light-contrast: white;
 
 html, body {
 		height: 100%;
@@ -75,8 +81,8 @@ html, body {
 	.column {
 		&-side {
 			width: 25%;
-			background: #555;
-			color: white;
+			background: @dark-contrast;
+			color: @light-contrast;
 			padding: 20px 4%;
 			text-align: center;
 		}
@@ -94,7 +100,7 @@ html, body {
 		width: 100%;
 		height: auto;
 		border-radius: 100%;
-		border: 5px solid white;
+		border: 5px solid @light-contrast;
 	}
 
 	.profile {
@@ -132,7 +138,7 @@ html, body {
 		}
 		a {
 			text-decoration: none;
-			color: white;
+			color: @light-contrast;
 		}
 	}
 
@@ -153,7 +159,8 @@ html, body {
 
 	.qualifications {
 		margin: 20px 0 20px 5%;
-		padding: 1px; //prevent margin collapse
+		padding: 1px 0; //prevent (some) margin collapse
+		
 
 		&-title {
 			display: flex;
@@ -185,7 +192,7 @@ html, body {
 			}
 			div {
 				font-family: @cursive;
-				color: #555;
+				color: @dark-contrast;
 			}
 		}
 

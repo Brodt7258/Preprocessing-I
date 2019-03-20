@@ -171,6 +171,12 @@ body {
 .container nav a:hover {
   color: tomato;
 }
+@media (max-width: 500px) {
+  .container nav {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
 .container .column-side {
   width: 25%;
   background: #555;

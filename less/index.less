@@ -54,6 +54,8 @@ html, body {
 
 			@media @phone {
 				width: 100%;
+				background: @light-contrast;
+				color: @default;
 			}
 		}
 		&-main {
@@ -61,13 +63,15 @@ html, body {
 		}
 	}
 
-	
-
 	img {
 		width: 100%;
 		height: auto;
 		border-radius: 100%;
 		border: 5px solid @light-contrast;
+
+		@media @phone {
+			width: 50%;
+		}
 	}
 
 	.profile {
@@ -107,6 +111,10 @@ html, body {
 		a {
 			text-decoration: none;
 			color: @light-contrast;
+
+			@media @phone {
+				color: @default;
+			}
 		}
 	}
 
@@ -122,6 +130,19 @@ html, body {
 		h3 {
 			font-family: @cursive;
 			font-size: 1.5rem;
+		}
+	}
+
+	.show-web {
+		@media @phone {
+			display: none;
+		}
+	}
+
+	.show-mobile {
+		display: none;
+		@media @phone {
+			display: initial;
 		}
 	}
 

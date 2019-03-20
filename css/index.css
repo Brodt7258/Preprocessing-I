@@ -181,6 +181,8 @@ body {
 @media (max-width: 500px) {
   .container .column-side {
     width: 100%;
+    background: white;
+    color: black;
   }
 }
 .container .column-main {
@@ -191,6 +193,11 @@ body {
   height: auto;
   border-radius: 100%;
   border: 5px solid white;
+}
+@media (max-width: 500px) {
+  .container img {
+    width: 50%;
+  }
 }
 .container .profile {
   margin: 40px 0;
@@ -225,6 +232,11 @@ body {
   text-decoration: none;
   color: white;
 }
+@media (max-width: 500px) {
+  .container .contact a {
+    color: black;
+  }
+}
 .container .basic-info {
   text-align: center;
   margin: 50px 0;
@@ -237,6 +249,19 @@ body {
 .container .basic-info h3 {
   font-family: 'Charm', cursive;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .container .show-web {
+    display: none;
+  }
+}
+.container .show-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .container .show-mobile {
+    display: initial;
+  }
 }
 .container .qualifications {
   margin: 20px 0 20px 5%;

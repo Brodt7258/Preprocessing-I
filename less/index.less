@@ -5,6 +5,11 @@
 html, body {
 		height: 100%;
 		font-family: @body;
+		overflow: hidden;
+
+		@media @phone {
+			overflow: initial;
+		}
 }
 
 .container {

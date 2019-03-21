@@ -134,6 +134,13 @@ html,
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    overflow: initial;
+  }
 }
 .container {
   margin: auto;

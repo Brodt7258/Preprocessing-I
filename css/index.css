@@ -233,6 +233,7 @@ body {
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
   font-size: 0.7rem;
+  margin: 7px 0 15px 0;
 }
 .container .contact a {
   text-decoration: none;
@@ -257,15 +258,15 @@ body {
   font-size: 1.5rem;
 }
 @media (max-width: 500px) {
-  .container .show-web {
+  .container .web-only {
     display: none;
   }
 }
-.container .show-mobile {
+.container .mobile-only {
   display: none;
 }
 @media (max-width: 500px) {
-  .container .show-mobile {
+  .container .mobile-only {
     display: initial;
   }
 }

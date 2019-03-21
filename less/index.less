@@ -112,6 +112,7 @@ html, body {
 		p {
 			.title-text();
 			font-size: 0.7rem;
+			margin: 7px 0 15px 0;
 		}
 		a {
 			text-decoration: none;
@@ -138,13 +139,13 @@ html, body {
 		}
 	}
 
-	.show-web {
+	.web-only {
 		@media @phone {
 			display: none;
 		}
 	}
 
-	.show-mobile {
+	.mobile-only {
 		display: none;
 		@media @phone {
 			display: initial;

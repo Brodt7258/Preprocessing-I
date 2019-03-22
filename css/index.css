@@ -1,1 +1,311 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  margin: auto;
+  width: 900px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container h2 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+.container .content {
+  display: flex;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .container .content {
+    flex-direction: column;
+  }
+}
+.container nav {
+  text-align: right;
+  margin-top: 15px;
+}
+.container nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.35s;
+}
+.container nav a:hover {
+  color: tomato;
+}
+@media (max-width: 500px) {
+  .container nav {
+    text-align: center;
+    margin: 15px 0;
+  }
+}
+.container .column-side {
+  width: 25%;
+  background: #555;
+  color: white;
+  padding: 20px 4%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .column-side {
+    width: 100%;
+    background: white;
+    color: black;
+  }
+}
+.container .column-main {
+  flex: 1;
+}
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+@media (max-width: 500px) {
+  .container img {
+    width: 50%;
+  }
+}
+.container .profile {
+  margin: 40px 0;
+}
+.container .profile h2 {
+  margin-bottom: 20px;
+}
+.container .profile p {
+  font-family: 'Charm', cursive;
+  line-height: 0.925rem;
+  font-size: 0.75rem;
+}
+.container .skills {
+  margin: 40px 0;
+}
+.container .skills h2 {
+  margin-bottom: 20px;
+}
+.container .skills p {
+  font-family: 'Charm', cursive;
+  line-height: 1.25rem;
+}
+.container .contact {
+  margin: 40px 0;
+}
+.container .contact p {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.7rem;
+  margin: 7px 0 15px 0;
+}
+.container .contact a {
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 500px) {
+  .container .contact a {
+    color: black;
+  }
+}
+.container .basic-info {
+  text-align: center;
+  margin: 50px 0;
+}
+.container .basic-info h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+.container .basic-info h3 {
+  font-family: 'Charm', cursive;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .container .web-only {
+    display: none;
+  }
+}
+.container .mobile-only {
+  display: none;
+}
+@media (max-width: 500px) {
+  .container .mobile-only {
+    display: initial;
+  }
+}
+.container .qualifications {
+  margin: 20px 0 20px 5%;
+  padding: 1px 0;
+}
+.container .qualifications-title {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+.container .qualifications-title h2 {
+  margin: 0 3%;
+}
+.container .qualifications-title .divider {
+  flex: 1;
+  height: 1px;
+  background-color: black;
+}
+.container .qualifications-content {
+  margin: 30px 5%;
+}
+.container .qualifications .name-and-date {
+  display: flex;
+  margin-bottom: 10px;
+}
+.container .qualifications .name-and-date p {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+}
+.container .qualifications .name-and-date div {
+  font-family: 'Charm', cursive;
+  color: #555;
+}
+.container .qualifications h4 {
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  margin: 10px 0;
+  text-decoration: underline;
+}
